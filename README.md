@@ -1,15 +1,14 @@
-### README.md
+##### README.md
 
 This repo contains homework for an online course.
 
 
-Please see []()
 
 Developing Data Products - R Course Project
 =======================
 
 This repo contains homework for an online course.
-It contains a single slidify presentation, as required by  the [Coursera course "Getting and Cleaning Data"][1] project/assigment of week 3.
+It contains a single slidify presentation, as required by  the [Coursera course "Developing Data Products"][1]. 
 Instructions given in this [external presentation][2].   
 
 Main Features
