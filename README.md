@@ -1,4 +1,4 @@
-##### README.md
+# README.md
 
 This repo contains homework for an online course.
 
