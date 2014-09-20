@@ -7,7 +7,7 @@ This repo contains homework for an online course.
 Developing Data Products - R Course Project
 =======================
 
-This repo contains a single slidify presentation, as required by  the [Coursera course "Developing Data Products"][1]. 
+This repo contains a single *Slidify* presentation, as required by  the [Coursera course "Developing Data Products"][1]. 
 Upload-to-Github instructions given in this [external presentation][2].   
 
 Main Features
