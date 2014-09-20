@@ -33,20 +33,68 @@ knit        : slidify::knit2slides
 ### My Shiny App: Word Clouds
 
 - it visualizes the most common phrases used in conference abstracts, AGU Fall Meeting 2012
+- Each word-cloud picture "summarizes the summaries" of hundreds of science talks and posters.
 
-<small>
-The American Geophysical Union (AGU) is a professional society for Earth Scientists. Once a year, there is a big conference with more than 20000 participants from around the world.
-This web-app creates Word Clouds from conference abstracts. Each word-cloud picture "summarizes the summaries" of hundreds of science talks and posters.
-In doing so, this app enables users to get a quick overview of important topics, buzzwords and common themes within a certain research area. Many subfields of Earth Science are interesting, related to one's own specialty, but still unfamiliar because of their vastness, technicality and interdiciplinarity.
-</small>
+- Example: 
+
+
 
 --- 
 
 ## Slide 4
 
-Note: Only a small subset of conference contributions, grouped by topic, are made queryable in the UI below.
+### The American Geophysical Union (AGU) 
+
+- is a professional society for Earth Scientists. 
+-  Once a year, there is a big conference with more than 20000 participants from around the world.
+
+- Over the years, number of participants has increased considerably.
+```{r echo=F, return="hide"}
+library(ggplot2)
+library(rjson)
+options(warn=-1)
+df <- rjson::fromJSON("{\"year\":[\"2005\",\"2006\",\"2007\",\"2008\",\"2009\",\"2010\",\"2011\",\"2012\",\"2004\",\"2005\",\"2006\",\"2007\",\"2008\",\"2009\",\"2010\",\"2011\",\"2012\",\"2013\"],\"participants\":[\"8067\",\"7732\",\"8037\",\"8685\",\"9088\",\"10463\",\"10725\",\"11275\",\"11422\",\"12008\",\"13972\",\"14649\",\"16242\",\"16642\",\"19175\",\"22167\",\"24000\",\"22500\"],\"orals\":[\"NA\",\"NA\",\"NA\",\"NA\",\"NA\",\"4431\",\"4333\",\"4436\",\"NA\",\"NA\",\"NA\",\"NA\",\"NA\",\"NA\",\"5852\",\"6000\",\"6800\",\"7500\"],\"posters\":[\"NA\",\"NA\",\"NA\",\"NA\",\"NA\",\"9370\",\"8439\",\"9092\",\"NA\",\"15788\",\"NA\",\"NA\",\"15730\",\"NA\",\"11517\",\"12000\",\"14000\",\"15000\"],\"conference\":[\"EGU\",\"EGU\",\"EGU\",\"EGU\",\"EGU\",\"EGU\",\"EGU\",\"EGU\",\"AGU\",\"AGU\",\"AGU\",\"AGU\",\"AGU\",\"AGU\",\"AGU\",\"AGU\",\"AGU\",\"AGU\"]}")
+df <- as.data.frame(df)
+df <- df[df$conference=="AGU", ]
+df$participants <- as.integer(df$participants)
+df$posters <- as.integer(df$posters)
+df$orals <- as.integer(df$orals)
+df$year <- as.integer(df$year)
+
+
+
+p2012 <- subset(df, year == 2012)
+pt <- paste0("AGU Conference: Number of Participants over the years.\n In 2012:", " n = ", p2012[1,"orals"], " talks, ", p2012[1,"posters"], " posters.")
+pl <- ggplot(data=df, aes(x = year, y =participants, colour=conference))
+pl <- pl +    scale_colour_discrete(guide = FALSE) 
+pl <- pl  + geom_point( size=3)
+pl <- pl  + geom_line()   # this is the base plot
+pl <- pl  + geom_point(data=p2012, colour="black")   # this adds a black point
+pl <- pl + geom_text(data=p2012, label=paste0("AGU 2012"), colour="black", hjust=1.1) # this adds a label for the single point
+
+pl <- pl + ggtitle(pt)
+#options(warn=w)
+#qplot(year, participants , data=df, color=conference)
+# with(p2.tmp, {
+# qplot(participants ~ year)
+# }
+
+```
+```{r echo=FALSE, fig.align='center', fig.height=3, fig.width = 5}
+pl
+
+
+```
+
+
+
+
 
 --- 
 
 ## Slide 5
 
+- Only a small subset of conference contributions, grouped by topic, are made queryable in the UI of the app.
+
+- Data was gathered by manual screen-scraping 
+- Tidying up data took much more  time than creating the shiny app.

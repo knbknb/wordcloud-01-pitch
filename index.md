@@ -33,20 +33,34 @@ knit        : slidify::knit2slides
 ### My Shiny App: Word Clouds
 
 - it visualizes the most common phrases used in conference abstracts, AGU Fall Meeting 2012
+- Each word-cloud picture "summarizes the summaries" of hundreds of science talks and posters.
 
-<small>
-The American Geophysical Union (AGU) is a professional society for Earth Scientists. Once a year, there is a big conference with more than 20000 participants from around the world.
-This web-app creates Word Clouds from conference abstracts. Each word-cloud picture "summarizes the summaries" of hundreds of science talks and posters.
-In doing so, this app enables users to get a quick overview of important topics, buzzwords and common themes within a certain research area. Many subfields of Earth Science are interesting, related to one's own specialty, but still unfamiliar because of their vastness, technicality and interdiciplinarity.
-</small>
+- Example: 
+
+
 
 --- 
 
 ## Slide 4
 
-Note: Only a small subset of conference contributions, grouped by topic, are made queryable in the UI below.
+### The American Geophysical Union (AGU) 
+
+- is a professional society for Earth Scientists. 
+-  Once a year, there is a big conference with more than 20000 participants from around the world.
+
+- Over the years, number of participants has increased considerably.
+
+<img src="assets/fig/unnamed-chunk-2.png" title="plot of chunk unnamed-chunk-2" alt="plot of chunk unnamed-chunk-2" style="display: block; margin: auto;" />
+
+
+
+
 
 --- 
 
 ## Slide 5
 
+- Only a small subset of conference contributions, grouped by topic, are made queryable in the UI of the app.
+
+- Data was gathered by manual screen-scraping 
+- Tidying up data took much more  time than creating the shiny app.

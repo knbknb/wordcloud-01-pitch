@@ -13,7 +13,8 @@
     media="only screen and (max-device-width: 480px)" >
   <link rel="stylesheet" href="libraries/frameworks/io2012/css/slidify.css" >
   <link rel="stylesheet" href="libraries/highlighters/highlight.js/css/tomorrow.css" />
-  <base target="_blank"> <!-- This amazingness opens all links in a new tab. -->  
+  <base target="_blank"> <!-- This amazingness opens all links in a new tab. -->  <link rel=stylesheet href="./assets/css/ribbons.css"></link>
+
   
   <!-- Grab CDN jQuery, fall back to local if offline -->
   <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.7.min.js"></script>
@@ -77,13 +78,9 @@
 
 <ul>
 <li>it visualizes the most common phrases used in conference abstracts, AGU Fall Meeting 2012</li>
+<li><p>Each word-cloud picture &quot;summarizes the summaries&quot; of hundreds of science talks and posters.</p></li>
+<li><p>Example: </p></li>
 </ul>
-
-<p><small>
-The American Geophysical Union (AGU) is a professional society for Earth Scientists. Once a year, there is a big conference with more than 20000 participants from around the world.
-This web-app creates Word Clouds from conference abstracts. Each word-cloud picture &quot;summarizes the summaries&quot; of hundreds of science talks and posters.
-In doing so, this app enables users to get a quick overview of important topics, buzzwords and common themes within a certain research area. Many subfields of Earth Science are interesting, related to one&#39;s own specialty, but still unfamiliar because of their vastness, technicality and interdiciplinarity.
-</small></p>
 
   </article>
   <!-- Presenter Notes -->
@@ -94,7 +91,15 @@ In doing so, this app enables users to get a quick overview of important topics,
     <h2>Slide 4</h2>
   </hgroup>
   <article data-timings="">
-    <p>Note: Only a small subset of conference contributions, grouped by topic, are made queryable in the UI below.</p>
+    <h3>The American Geophysical Union (AGU)</h3>
+
+<ul>
+<li>is a professional society for Earth Scientists. </li>
+<li><p>Once a year, there is a big conference with more than 20000 participants from around the world.</p></li>
+<li><p>Over the years, number of participants has increased considerably.</p></li>
+</ul>
+
+<p><img src="assets/fig/unnamed-chunk-2.png" title="plot of chunk unnamed-chunk-2" alt="plot of chunk unnamed-chunk-2" style="display: block; margin: auto;" /></p>
 
   </article>
   <!-- Presenter Notes -->
@@ -105,7 +110,12 @@ In doing so, this app enables users to get a quick overview of important topics,
     <h2>Slide 5</h2>
   </hgroup>
   <article data-timings="">
-    
+    <ul>
+<li><p>Only a small subset of conference contributions, grouped by topic, are made queryable in the UI of the app.</p></li>
+<li><p>Data was gathered by manual screen-scraping </p></li>
+<li><p>Tidying up data took much more  time than creating the shiny app.</p></li>
+</ul>
+
   </article>
   <!-- Presenter Notes -->
 </slide>
