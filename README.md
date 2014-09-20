@@ -15,7 +15,7 @@ Main Features
 Just  browse through the presentation.
 
 
-The  *Shiny* Web-App is hosted on [shinyapps.io][4].
+The  *Shiny* Web-App is hosted on [https://rapps.shinyapps.io/wordcloud01/][4].
 
 
 The code the presentation is discussing is in repo [wordcloud-01][3].
