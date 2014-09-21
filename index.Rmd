@@ -91,10 +91,10 @@ Rapid technological progress in many fields, how to keep up-to-date with all thi
 </td>
                <td>
         <!--<img size="50%" src="assets/img/Screenshot-shinyapp-wordclouds.png" title="Sample wordcloud, same as logo" alt="Sample Wordcloud"/>-->
-        <small>App visualizes the most common phrases used in conference abstracts, AGU Fall Meeting 2012</small><br>
+        <small>App visualizes the most common phrases used in conference abstracts</small><br>
 <small>Each word-cloud picture "summarizes the summaries" of hundreds of science talks and posters.</small><br>
 <small>This example is from conference track "Volcanology"</small><br>
-<small>This picture incorporates n=1098 abstracts, each one page long, ~1000 words </small><br>
+<small>This picture incorporates n=1098 abstracts, each one ~1000 words </small><br>
 <small>Size and color of phrases in word cloud is proportional to number of occurences </small><br>
 <small>Generation of word clouds is <strong>interactive!</strong> </small> 
         </td>
