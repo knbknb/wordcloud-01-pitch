@@ -52,7 +52,7 @@
     <h3>Information Overload in the STEM Sciences</h3>
 
 <ul>
-<li>There is more scientific literature produced than can be possibly read</li>
+<li>There is more scientific literature produced than ever before</li>
 <li>A staggering 6,000 papers are published every day </li>
 <li>Source: <a href="http://www.nature.com/news/how-to-tame-the-flood-of-literature-1.15806">Nature News &amp; Comment, Sept. 3, 2014</a></li>
 </ul>
@@ -60,9 +60,10 @@
 <h3>Information Overload in small subfields of sciences</h3>
 
 <ul>
-<li>Even a single big conference releases an overwhelming amount of information</li>
+<li>Even a single annual conference can release an overwhelming amount of information</li>
 <li>Let&#39;s develop a new tool to tame this</li>
-<li>Stategy: Interactively summarize the summaries</li>
+<li>Strategy: Interactively summarize the summaries</li>
+<li>First step: My Shiny-App <a href="https://rapps.shinyapps.io/wordcloud01/">&#39;Wordclouds&#39;</a><br></li>
 </ul>
 
   </article>
@@ -74,13 +75,20 @@
     <h2>Slide 3</h2>
   </hgroup>
   <article data-timings="">
-    <h3>My Shiny App: Word Clouds</h3>
+    <h3>Case study: Conference &quot;AGU Fall Meeting 2012&quot;</h3>
 
 <ul>
-<li>it visualizes the most common phrases used in conference abstracts, AGU Fall Meeting 2012</li>
-<li><p>Each word-cloud picture &quot;summarizes the summaries&quot; of hundreds of science talks and posters.</p></li>
-<li><p>Example: </p></li>
+<li>The <a href="http://en.wikipedia.org/wiki/American_Geophysical_Union">American Geophysical Union (AGU)</a> is a professional society for Earth Scientists. </li>
+<li>Hosts annual big conference with more than 20000 participants from around the world.</li>
+<li>Nearly each participant gives a short talk or <a href="https://www.youtube.com/watch?v=dFf1eZ5MAYA" title="Stroll from one end of the AGU poster session room to the other end (2011)">presents a poster</a>.</li>
+<li>Over the years, number of participants has increased considerably.</li>
 </ul>
+
+<p><img src="assets/fig/unnamed-chunk-2.png" title="plot of chunk unnamed-chunk-2" alt="plot of chunk unnamed-chunk-2" style="display: block; margin: auto;" /></p>
+
+<hr>
+
+<p>Rapid technological progress in many fields, how to keep up-to-date with all this?</p>
 
   </article>
   <!-- Presenter Notes -->
@@ -91,15 +99,27 @@
     <h2>Slide 4</h2>
   </hgroup>
   <article data-timings="">
-    <h3>The American Geophysical Union (AGU)</h3>
+    <h3>My Shiny App:  <a href="https://rapps.shinyapps.io/wordcloud01/">&#39;Word Clouds&#39;</a></h3>
 
-<ul>
-<li>is a professional society for Earth Scientists. </li>
-<li><p>Once a year, there is a big conference with more than 20000 participants from around the world.</p></li>
-<li><p>Over the years, number of participants has increased considerably.</p></li>
-</ul>
-
-<p><img src="assets/fig/unnamed-chunk-2.png" title="plot of chunk unnamed-chunk-2" alt="plot of chunk unnamed-chunk-2" style="display: block; margin: auto;" /></p>
+<table width="1024px">
+    <tr>
+        <td><img src="assets/img/wordclouds-volc-gui-050pc.png" title="Sample wordcloud, same as logo" alt="Sample Wordcloud"/>
+</td>
+               <td>
+        <!--<img size="50%" src="assets/img/Screenshot-shinyapp-wordclouds.png" title="Sample wordcloud, same as logo" alt="Sample Wordcloud"/>-->
+        <small>App visualizes the most common phrases used in conference abstracts, AGU Fall Meeting 2012</small><br>
+<small>- Each word-cloud picture "summarizes the summaries" of hundreds of science talks and posters.</small><br>
+<small>- This example is from conference track "Education, Public Relations and Outreach"</small><br>
+<small>- This picture incorporates n=771 abstracts, each one page long </small><br>
+<small>- Size and color of phrases in word cloud is proportional to number of occurences </small><br>
+<small>- Generation of word clouds is <strong>interactive!</strong> </small> 
+        </td>
+    </tr>
+        <tr>
+        <td colspan="2">
+        App GUI, Wordcloud of 2-word-phrases of 1098 "Volcanology" abstracts 
+</td></tr>
+</table>
 
   </article>
   <!-- Presenter Notes -->
@@ -110,10 +130,21 @@
     <h2>Slide 5</h2>
   </hgroup>
   <article data-timings="">
-    <ul>
-<li><p>Only a small subset of conference contributions, grouped by topic, are made queryable in the UI of the app.</p></li>
-<li><p>Data was gathered by manual screen-scraping </p></li>
-<li><p>Tidying up data took much more  time than creating the shiny app.</p></li>
+    <h3>Background Info</h3>
+
+<ul>
+<li>Only a small subset of conference topics are made queryable in the UI of the app.</li>
+<li>Data was gathered by manual harvesting from conference web sites. FYI, check out the <a href="http://abstractsearch.agu.org/meetings/2013/FM/sections/V">Volcanology Section</a> </li>
+<li>Downloading and tidying up data took much more time than creating the Shiny app. </li>
+<li>In the Shiny app, workhorse R packages are &quot;tm&quot; for text mining, &quot;wordcloud&quot; for generating wordclouds</li>
+</ul>
+
+<h3>Outlook</h3>
+
+<ul>
+<li>Many interesting results, can&#39;t summarize them here, as max. 5 slides already full</li>
+<li>Can do interactive wordcloud generation for any text collection, of any size. </li>
+<li>Classic Plan: <strong>1.</strong> Generate Wordclouds. <strong>2.</strong> ??? <strong>3.</strong> Profit!</li>
 </ul>
 
   </article>
