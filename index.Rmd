@@ -101,7 +101,7 @@ Rapid technological progress in many fields, how to keep up-to-date with all thi
     </tr>
         <tr>
         <td colspan="2">
-        App GUI, Wordcloud of 2-word-phrases of 1098 "Volcanology" abstracts 
+        App GUI, Wordcloud of 2-word-phrases of Volcanology abstracts 
 </td></tr>
 </table>
 
