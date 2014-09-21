@@ -58,11 +58,11 @@ Rapid technological progress in many fields, how to keep up-to-date with all thi
                <td>
         <!--<img size="50%" src="assets/img/Screenshot-shinyapp-wordclouds.png" title="Sample wordcloud, same as logo" alt="Sample Wordcloud"/>-->
         <small>App visualizes the most common phrases used in conference abstracts, AGU Fall Meeting 2012</small><br>
-<small>- Each word-cloud picture "summarizes the summaries" of hundreds of science talks and posters.</small><br>
-<small>- This example is from conference track "Education, Public Relations and Outreach"</small><br>
-<small>- This picture incorporates n=771 abstracts, each one page long </small><br>
-<small>- Size and color of phrases in word cloud is proportional to number of occurences </small><br>
-<small>- Generation of word clouds is <strong>interactive!</strong> </small> 
+<small>Each word-cloud picture "summarizes the summaries" of hundreds of science talks and posters.</small><br>
+<small>This example is from conference track "Volcanology"</small><br>
+<small>This picture incorporates n=1098 abstracts, each one page long, ~1000 words </small><br>
+<small>Size and color of phrases in word cloud is proportional to number of occurences </small><br>
+<small>Generation of word clouds is <strong>interactive!</strong> </small> 
         </td>
     </tr>
         <tr>
@@ -80,7 +80,7 @@ Rapid technological progress in many fields, how to keep up-to-date with all thi
 - Only a small subset of conference topics are made queryable in the UI of the app.
 - Data was gathered by manual harvesting from conference web sites. FYI, check out the [Volcanology Section](http://abstractsearch.agu.org/meetings/2013/FM/sections/V) 
 - Downloading and tidying up data took much more time than creating the Shiny app. 
-- In the Shiny app, workhorse R packages are "tm" for text mining, "wordcloud" for generating wordclouds
+- In the Shiny app, workhorse R packages from CRAN are "tm" for text mining, "wordcloud" for generating wordclouds
 
 ### Outlook
 
