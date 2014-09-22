@@ -31,4 +31,4 @@ Upload-to-Github instructions were given in this [external presentation][2].
  [2]: http://rpubs.com/thoughtfulbloke/25103
  [3]: https://github.com/knbknb/wordcloud-01-pitch
  [4]: https://rapps.shinyapps.io/wordcloud01/
- [5]: knbknb.github.io/wordcloud-01-pitch/index.html
+ [5]: http://knbknb.github.io/wordcloud-01-pitch/index.html
