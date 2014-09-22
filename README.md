@@ -29,6 +29,6 @@ Upload-to-Github instructions were given in this [external presentation][2].
 
  [1]: http://datasciencespecialization.github.io/ddp/
  [2]: http://rpubs.com/thoughtfulbloke/25103
- [3]: https://github.com/knbknb/wordcloud-01-pitch
+ [3]: https://github.com/knbknb/wordcloud-01
  [4]: https://rapps.shinyapps.io/wordcloud01/
  [5]: http://knbknb.github.io/wordcloud-01-pitch/index.html
